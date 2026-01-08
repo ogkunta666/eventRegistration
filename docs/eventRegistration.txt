@@ -1,0 +1,29 @@
+#1 init 
+
+CMD-be
+cd c:\xampp1\htdocs
+C:\xampp\htdocs>composer create-project laravel/laravel eventRegistration
+cd eventRegistration
+
+vsc-be megnyitjuk a projektet
+
+github repo beallitasa
+
+.env file modositasa
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=event_registration
+DB_USERNAME=root
+DB_PASSWORD=
+
+config/app.php timezone allitasa
+
+ 'timezone' => 'Europe/Budapest'
+
+Sanctum telepitese
+
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+commit
